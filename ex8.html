@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nunber = +prompt("Enter number from 100 - 999:");
+        if(number < 100 || number > 999 || isNaN(number)){
+            document.write("Please enter a number from 100 - 999");
+        }else{
+            if(number = Math.pow(number%10 , 3) + Math.pow((number/10)%10 , 3) + Math.pow((number/100)%10 ,3)){
+                document.write(`${number} is Armstrong `)
+            }else{
+                document.write(`${number} is not Armstrong `)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let principal = parseFloat(prompt("Enter initial deposit money (VND)"));
+        let monthlyRate = parseFloat(prompt("Enter monthly rate"));
+        let month = +prompt("Enter month");
+        for(let i = 1 ; i < month ; i++){
+            principal *= (1 + monthlyRate/100);
+        }
+        document.write(`$Total money will receive is ${principal.toLocaleString("vi-VN")}VND`);
+    </script>
+</body>
+</html>

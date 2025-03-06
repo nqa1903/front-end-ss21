@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = +prompt("Enter number");
+      if (number < 2 || isNaN(number)) {
+        document.write("Not valid");
+      } else {
+        let isPrime = true;
+        for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+        if (isPrime) {
+          document.write(`${number} is a prime number.`);
+        } else {
+          document.write(`${number} is not a prime number.`);
+        }
+      }
+    </script>
+  </body>
+</html>

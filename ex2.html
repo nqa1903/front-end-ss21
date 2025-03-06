@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let odd = 0;
+        let even = 0;
+        for(let i = 0 ; i < 5 ; i++){
+            let number = +prompt("Enter number");
+            if(number % 2 == 0){
+                even++;
+            }else{
+                odd++;
+            }
+        }
+        document.write(`There are ${even} even numbers and ${odd} odd numbers`);
+    </script>
+</body>
+</html>

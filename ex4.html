@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let a = +prompt("Enter a ");
+      let b = +prompt("Enter b ");
+      let c = +prompt("Enter c");
+      let x;
+      if (a == 0) {
+        document.write(`Not quadratic equation`);
+      } else {
+        delta = b * b - 4 * a * c;
+        if (delta < 0) {
+          document.write("Has no solution");
+        } else if (delta == 0) {
+          x = -b / (2 * a);
+          document.write(`x1 = x2 = ${x}`);
+        } else {
+          x1 = (-b + Math.sqrt(delta)) / (2 * a);
+          x2 = (-b - Math.sqrt(delta)) / (2 * a);
+          document.write(`x1 = ${x1}, x2 = ${x2}`);
+        }
+      }
+    </script>
+</body>
+</html>
